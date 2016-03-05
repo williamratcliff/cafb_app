@@ -32,6 +32,34 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.barcodeScanner"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+        "id": "cordova-plugin-camera.Camera",
+        "clobbers": [
+            "Camera"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+        "id": "cordova-plugin-camera.CameraPopoverOptions",
+        "clobbers": [
+            "CameraPopoverOptions"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/Camera.js",
+        "id": "cordova-plugin-camera.camera",
+        "clobbers": [
+            "navigator.camera"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+        "id": "cordova-plugin-camera.CameraPopoverHandle",
+        "clobbers": [
+            "CameraPopoverHandle"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -40,7 +68,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.0.0",
     "org.apache.cordova.dialogs": "0.3.0",
     "org.apache.cordova.inappbrowser": "0.6.0",
-    "phonegap-plugin-barcodescanner": "4.0.2"
-}
+    "phonegap-plugin-barcodescanner": "4.1.0",
+    "cordova-plugin-camera": "2.1.1-dev"
+};
 // BOTTOM OF METADATA
 });
